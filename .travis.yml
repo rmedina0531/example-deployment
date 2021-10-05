@@ -11,6 +11,10 @@ script:
 
 deploy:
   provider: elasticbeanstalk
+  access_key_id: 
+    secure: $AWS_ACCESSS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
   region: "us-west-1"
   app: "example-deployment"
   env: "Exampledeployment-env"
@@ -18,7 +22,4 @@ deploy:
   bucket_path: "example-deployment"
   on:
     branch: master
-  access_key_id: $AWS_ACCESSS_KEY
-  secret_access_key:
-    secure: $AWS_SECRET_KEY
-  edge: true
+  
