@@ -18,5 +18,5 @@ deploy:
   bucket_path: "example-deployment"
   on:
     branch: master
-  access_key_id: $AWS_ACCESS_KEY
+  access_key_id: $AWS _ACCESSS_KEY
   secret_access_key: $AWS_SECRET_KEY
